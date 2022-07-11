@@ -5,6 +5,7 @@ import './pages/article_page.dart';
 import './pages/home_page.dart';
 import './pages/profile_page.dart';
 import './pages/test_page.dart';
+import 'routes.dart'
 
 void main() {
   runApp(MyApp());
@@ -56,6 +57,19 @@ class _MyAppState extends State<MyApp> {
                   label: 'Profile',
                 ),
               ]),
-        ));
+        )
+    
+           home: HomeScreen(),
+
+      //Routes
+      initialRoute: MyRoutes.loginRoute,
+      routes: {
+        MyRoutes.homeRoute: (context) => HomeScreen(),
+       MyRoutes.loginRoute:(context)=>LoginPage(),
+      MyRoutes.articleRoute:(context)=>ArticlePage(),
+         MyRoutes.profileRoute:(context)=>ProfilePage(), 
+          MyRoutes.testRoute:(context)=>TestPage(),
+        
+      },);
   }
 }
