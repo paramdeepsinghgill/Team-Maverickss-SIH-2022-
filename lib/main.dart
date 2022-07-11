@@ -59,12 +59,12 @@ class _MyAppState extends State<MyApp> {
               ]),
         )
     
-           home: HomeScreen(),
+           home: HomePage(),
 
       //Routes
       initialRoute: MyRoutes.loginRoute,
       routes: {
-        MyRoutes.homeRoute: (context) => HomeScreen(),
+        MyRoutes.homeRoute: (context) => HomePage(),
        MyRoutes.loginRoute:(context)=>LoginPage(),
       MyRoutes.articleRoute:(context)=>ArticlePage(),
          MyRoutes.profileRoute:(context)=>ProfilePage(), 
